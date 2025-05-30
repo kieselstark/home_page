@@ -83,6 +83,7 @@
       border-radius: 8px;
       margin-top: 15px;
       margin-right: 10px;
+      margin-bottom: 10px;
       font-weight: bold;
       transition: transform 0.3s, background 0.3s;
     }
@@ -106,6 +107,18 @@
       height: 20px;
       vertical-align: middle;
       margin-left: 5px;
+    }
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .portfolio-grid .button {
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+      margin: 0;
     }
     footer {
       text-align: center;
@@ -138,6 +151,12 @@
       .section { padding: 20px; }
       .profile-img { width: 100px; height: 100px; }
       .button { display: block; margin: 10px 0; }
+      .portfolio-grid {
+        flex-direction: column;
+      }
+      .portfolio-grid .button {
+        min-width: auto;
+      }
     }
   </style>
 </head>
@@ -163,11 +182,13 @@
     <div class="section">
       <h2>Mein Portfolio</h2>
       <p>Hier sind meine Lieblingsprojekte – klein und fein. Natürlich wird's noch erweitert...</p>
-      <p>
+      <div class="portfolio-grid">
         <a href="https://kieselstark.github.io/meine-einkaufsliste/" class="button">Meine Einkaufsliste</a>
         <a href="http://linnig.net/index.html" class="button">Mulino Verde</a>
         <a href="https://kieselstark.github.io/Gold-Silber-Ratio" class="button">Gold-Silber-Ratio</a>
-      </p>
+        <a href="https://kieselstark.github.io/Gold-Platin-Ratio/" class="button">Gold-Platin-Ratio</a>
+        <a href="https://kieselstark.github.io/Gold-Palladium-Ratio/" class="button">Gold-Palladium-Ratio</a>
+      </div>
     </div>
   </div>
 
